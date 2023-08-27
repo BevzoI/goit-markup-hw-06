@@ -1,6 +1,6 @@
 :root {
-  --default-font: "Roboto", sans-serif;
-  --accent-font: "Raleway", sans-serif;
+  --default-font: 'Roboto', sans-serif;
+  --accent-font: 'Raleway', sans-serif;
   --cl-primary_brand: #4d5ae5;
   --cl-pressed_state: #404bbf;
   --cl-dark: #2e2f42;
@@ -23,10 +23,9 @@
 |===============================
 */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
-  background-color: #ffffff;
-  text-decoration: none;
+  /* reset */
 
   /* Default styles */
   font-size: 16px;
@@ -35,11 +34,50 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+}
+/*sections & divs */
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px solid var(--cl-light);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 /* header style */
 .logo {
@@ -87,11 +125,12 @@ body {
 /*hero image*/
 .hero-img {
   background-color: var(--cl-dark);
+  height: 587px;
 }
 .title-hero {
   color: #ffffff;
   background-color: var(--cl-hero_background);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -99,7 +138,7 @@ body {
   text-align: center;
 }
 .hero-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -182,7 +221,7 @@ body {
 .footer-span-logo {
   color: #f4f4fd;
   background-color: var(--cl-dark);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -192,7 +231,7 @@ body {
   text-decoration: none;
 }
 .footer-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -214,7 +253,7 @@ body {
   background: var(--cl-accent);
   color: var(--cl-primary_brand);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
