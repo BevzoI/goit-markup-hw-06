@@ -61,6 +61,7 @@ p {
 }
 .header {
   border-bottom: 1px solid var(--cl-light);
+  border-bottom: 1px solid var(--third-ligth-color);
 }
 .header-nav {
   display: flex;
@@ -268,10 +269,12 @@ p {
 /*footer*/
 .footer {
   background-color: var(--cl-dark);
+  padding: 100px 0 100px;
+  margin-bottom: 16px;
 }
 .footer-span-logo {
-  color: #f4f4fd;
   background-color: var(--cl-dark);
+  color: #f4f4fd;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -283,6 +286,7 @@ p {
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
+  background-color: var(--cl-dark);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
@@ -291,15 +295,29 @@ p {
   text-align: left;
   color: var(--cl-primary_brand);
   text-decoration: none;
-  background-color: var(--cl-dark);
+  margin-bottom: 16px;
 }
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 17.5px;
 }
 /*portfolio*/
 /*filter btn active*/
+.portfolio-page {
+  padding-top: 96px;
+}
+.images-link .images-subtitle {
+  text-align: left;
+}
+.filter {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 .btn-filter {
   background: var(--cl-accent);
   color: var(--cl-primary_brand);
@@ -310,6 +328,9 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(-- #e7e9fc);
 }
 
 .btn-filter:hover,
@@ -318,9 +339,23 @@ p {
   color: var(--cl-white_background);
 }
 /*all images*/
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
 .link {
   text-decoration: none;
   background: var(--cl-white_background);
+}
+.images-link {
+  width: calc((100% - 24px * 2) / 3);
+}
+.portfolio-img-item {
+  padding: 32px 16px;
+  background: var(--cl-white_background);
+  border: 1px solid var(-- #e7e9fc);
+  border-top: none;
 }
 .images-subtitle {
   color: var(--cl-dark);
@@ -333,6 +368,9 @@ p {
   color: var(--cl-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.images-link .images-subtitle {
+  margin-bottom: 8px;
 }
 
 /*portfolio end*/
