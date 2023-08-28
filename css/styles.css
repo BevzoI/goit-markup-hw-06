@@ -60,7 +60,9 @@ p {
 .list {
   list-style: none;
 }
-
+.section {
+  padding-bottom: 120px;
+}
 .header {
   border-bottom: 1px solid var(--cl-light);
   border-bottom: 1px solid var(--third-ligth-color);
@@ -87,6 +89,7 @@ p {
   border-bottom: 1px solid var(--cl-accent);
   width: 1158px; 
   padding: 0 15px;
+  margin: 0 auto;
 }
 /* header style */
 .logo {
@@ -204,6 +207,9 @@ p {
   text-align: left;
 }
 /*section 2*/
+.img {
+  padding: 120px 0;
+}
 .title-section-img {
   color: var(--cl-dark);
   font-size: 36px;
@@ -212,7 +218,7 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.img-section .title-section-img {
+.img .title-section-img {
   margin-bottom: 72px;
   padding-bottom: 120px;
   
