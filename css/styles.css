@@ -125,7 +125,7 @@ p {
 /*hero image*/
 .hero-img {
   background-color: var(--cl-dark);
-  height: 587px;
+  padding: 188px 0 188px;
 }
 .title-hero {
   color: #ffffff;
@@ -135,19 +135,22 @@ p {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
+  max-width: 496px;
+  margin: 0 auto;
 }
 .hero-btn {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
   letter-spacing: 0.04em;
   text-align: left;
   line-height: 1.5;
   cursor: pointer;
   background: var(--cl-primary_brand);
   color: var(--cl-white_background);
+  margin: 48px auto;
+  display: block;
+  padding: 16px 32px;
+  border: none;
+  min-width: 169px;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -156,8 +159,18 @@ p {
 }
 
 /*section 1*/
+.section1-list {
+  padding: 120px 0;
+}
 .advantages-title {
   visibility: hidden;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.section-advantages {
+  width: calc((100%-24px*3)/4);
 }
 .advantages-subtitle {
   color: var(--cl-dark);
@@ -165,11 +178,18 @@ p {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: left;
 }
 .advantages-text {
   color: 434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.section-advantages,
+.advantages-subtitle {
+  margin-bottom: 8px;
+  text-align: left;
 }
 /*section 2*/
 .title-section-img {
@@ -180,10 +200,24 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-
+.section2 .title-section-img {
+  margin-bottom: 72px;
+}
+.section2-list {
+  display: flex;
+  gap: 24px;
+}
 /*section 3*/
 .section-team-foto {
   background-color: var(--cl-light);
+  padding: 120px 0;
+}
+.section-team-foto .section-team {
+  margin-bottom: 72px;
+}
+.team-list {
+  display:flex;
+  gap: 24px;
 }
 .section-team {
   color: var(--cl-dark);
@@ -198,6 +232,18 @@ p {
 }
 .team-info {
   background-color: var(--cl-white_background);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-info-list {
+  padding: 32px 0;
+  background: var(--cl-accent);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-info-list .team-subtitle {
+  margin-bottom: 8px;
 }
 .team-subtitle {
   color: var(--cl-dark);
