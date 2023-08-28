@@ -49,6 +49,7 @@ p {
 }
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 .list {
   list-style: none;
