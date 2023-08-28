@@ -83,6 +83,9 @@ p {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--cl-accent);
+  width: 1158px; 
+  padding: 0 15px;
 }
 /* header style */
 .logo {
@@ -176,8 +179,8 @@ p {
   display: flex;
   gap: 24px;
 }
-.section-advantages {
-  width: calc((100%-24px*3)/4);
+.section-advantages-list {
+  width: calc((100% - 72px) / 4);
 }
 .advantages-subtitle {
   color: var(--cl-dark);
@@ -207,10 +210,10 @@ p {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.section2 .title-section-img {
+.img-section .title-section-img {
   margin-bottom: 72px;
 }
-.section2-list {
+.img-list {
   display: flex;
   gap: 24px;
 }
