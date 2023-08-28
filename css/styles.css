@@ -214,6 +214,8 @@ p {
 }
 .img-section .title-section-img {
   margin-bottom: 72px;
+  padding-bottom: 120px;
+  
 }
 .img-list {
   display: flex;
@@ -223,6 +225,8 @@ p {
 .section-team-foto {
   background-color: var(--cl-light);
   padding: 120px 0;
+  height: 732px;
+  flex-shrink: 0;
 }
 .section-team-foto .section-team {
   margin-bottom: 72px;
@@ -238,6 +242,9 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  width: 1158px ;
+  padding: 0 15px ;
+  margin: 0 auto ;
 }
 .team-line {
   background-color: var(--cl-light);
@@ -246,6 +253,12 @@ p {
   background-color: var(--cl-white_background);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 .team-info-list {
   padding: 32px 0;
