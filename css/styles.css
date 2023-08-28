@@ -34,6 +34,12 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+
+.container {
+  width: 1158px ;
+  padding: 0 15px ;
+  margin: 0 auto ;
+}
 img {
   display: block;
 }
@@ -54,12 +60,7 @@ p {
 .list {
   list-style: none;
 }
-/*sections & divs */
-.container {
-  width: 1158px ;
-  padding: 0 15px ;
-  margin: 0 auto ;
-}
+
 .header {
   border-bottom: 1px solid var(--cl-light);
   border-bottom: 1px solid var(--third-ligth-color);
@@ -136,6 +137,7 @@ p {
 .hero-img {
   background-color: var(--cl-dark);
   padding: 188px 0 188px;
+  width: 1158px;
 }
 .title-hero {
   color: #ffffff;
