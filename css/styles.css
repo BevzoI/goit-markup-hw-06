@@ -34,6 +34,9 @@ body {
   line-height: 1.2;
   text-decoration: none;
 }
+img {
+  display: block;
+}
 /* reset */
 h1,
 h2,
@@ -52,9 +55,9 @@ p {
 }
 /*sections & divs */
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 1158px ;
+  padding: 0 15px ;
+  margin: 0 auto ;
 }
 .header {
   border-bottom: 1px solid var(--cl-light);
@@ -88,6 +91,7 @@ p {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-accent {
   color: var(--cl-primary_brand);
@@ -103,6 +107,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cl-dark);
+  padding: 24px 0;
 }
 
 .nav-title:hover,
