@@ -10,7 +10,6 @@
   --cl-accent: #e7e9fc;
   /* --cl-accent: #F4F4FD; */
   /* --cl-accent: rgba(231, 233, 252, 1); */
-  --cl-accent: #f4f4fd;
   --cl-light: rgba(244, 244, 253, 1);
   --cl-modal_overlay: #2e2f4266;
   --cl-hero_background: #2e2f42b3;
@@ -59,6 +58,8 @@ p {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 .section {
   padding-bottom: 120px;
@@ -377,7 +378,6 @@ p {
   cursor: pointer;
   border-radius: 4px;
   padding: 12px 24px;
-  border: 1px solid var(--cl-accent);
 }
 
 .btn-filter:hover,
