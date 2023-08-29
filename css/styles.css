@@ -8,8 +8,6 @@
   --cl-text: #434455;
   --cl-subtle_text: #8e8f99;
   --cl-accent: #e7e9fc;
-  /* --cl-accent: #F4F4FD; */
-  /* --cl-accent: rgba(231, 233, 252, 1); */
   --cl-light: rgba(244, 244, 253, 1);
   --cl-modal_overlay: #2e2f4266;
   --cl-hero_background: #2e2f42b3;
@@ -352,10 +350,9 @@ p {
 /*filter btn active*/
 .portfolio-page {
   padding: 96px 0 120px 0;
+  border-top: none;
 }
-.portfolio-container {
-  border-top: none; 
-}
+
 .images-link .images-subtitle {
   text-align: left;
 }
@@ -369,6 +366,7 @@ p {
 .btn-filter {
   background: var(--cl-accent);
   color: var(--cl-primary_brand);
+  border: 1px solid var(--cl-accent);
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
