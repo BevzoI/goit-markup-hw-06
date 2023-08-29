@@ -64,8 +64,7 @@ p {
   padding-bottom: 120px;
 }
 .header {
-  border-bottom: 1px solid #e7e9fc;
-  border-bottom: 1px solid var(--third-ligth-color);
+  border-bottom: 1px solid --cl-accent;
 }
 .header-nav {
   display: flex;
@@ -185,8 +184,10 @@ p {
   gap: 24px;
   padding: 0;
 }
+.section-advantages {
+  width: calc((100% - 72px) / 4);
+}
 .section-advantages-list {
-  flex-basis: calc((100% - 3 * 24px) / 4);
   padding: 120px 0 120px;
 }
 .advantages-subtitle {
@@ -326,6 +327,7 @@ p {
   color: var(--cl-primary_brand);
   text-decoration: none;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-text {
   color: #f4f4fd;
