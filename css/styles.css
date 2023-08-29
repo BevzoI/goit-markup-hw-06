@@ -350,9 +350,10 @@ p {
 /*filter btn active*/
 .portfolio-page {
   padding: 96px 0 120px 0;
-  border-top: none;
 }
-
+.portfolio-page {
+  border-top: none; 
+}
 .images-link .images-subtitle {
   text-align: left;
 }
