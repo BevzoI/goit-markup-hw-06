@@ -64,7 +64,7 @@ p {
   padding-bottom: 120px;
 }
 .header {
-  border-bottom: 1px solid var(--cl-light);
+  border-bottom: 1px solid #e7e9fc;
   border-bottom: 1px solid var(--third-ligth-color);
 }
 .header-nav {
@@ -183,6 +183,7 @@ p {
 .advantages-list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 .section-advantages-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -228,6 +229,7 @@ p {
 .img-list {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 /*section 3*/
 .section-team-foto {
@@ -242,6 +244,7 @@ p {
 .team-list {
   display:flex;
   gap: 24px;
+  padding: 0;
 }
 .section-team {
   color: var(--cl-dark);
@@ -261,7 +264,6 @@ p {
   background-color: var(--cl-white_background);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-  display: flex ;
   padding-bottom: 0px;
   flex-direction: column;
   justify-content: center;
