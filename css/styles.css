@@ -63,8 +63,20 @@ p {
 .section {
   padding-bottom: 120px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .header {
-  border-bottom: 1px solid --cl-accent;
+  border-bottom: 1px solid var(--cl-accent);
 }
 .header-nav {
   display: flex;
@@ -85,7 +97,7 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid --cl-accent;
+  border-bottom: 1px solid var(--cl-accent);
   width: 1158px; 
   padding: 0 15px;
   margin: 0 auto;
