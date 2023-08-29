@@ -86,7 +86,9 @@ p {
   display: flex;
   gap: 40px;
 }
-.header-item:not(:last-child) 
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .header-address-list {
   display: flex;
@@ -108,6 +110,7 @@ p {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .logo-accent {
   color: var(--cl-primary_brand);
@@ -137,6 +140,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cl-text);
+  gap: 24px;
 }
 
 .address-detail:hover,
