@@ -97,7 +97,6 @@ p {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--cl-accent);
   width: 1158px; 
   padding: 0 15px;
   margin: 0 auto;
@@ -352,6 +351,9 @@ p {
 /*filter btn active*/
 .portfolio-page {
   padding: 96px 0 120px 0;
+}
+.portfolio-container {
+  border-top: none; 
 }
 .images-link .images-subtitle {
   text-align: left;
