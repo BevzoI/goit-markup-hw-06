@@ -223,6 +223,7 @@ p {
 .img {
   padding: 120px 0;
   display: flex ;
+  padding-top: 0;
 }
 .title-section-img {
   color: var(--cl-dark);
