@@ -84,7 +84,6 @@ p {
 }
 .header-nav-list {
   display: flex;
-  gap: 40px;
 }
 .header-item:not(:last-child) {
   margin-right: 40px;
@@ -92,7 +91,6 @@ p {
 
 .header-address-list {
   display: flex;
-  gap: 40px;
 }
 .header-container {
   display: flex;
