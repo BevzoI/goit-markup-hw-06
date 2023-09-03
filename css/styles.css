@@ -196,6 +196,14 @@ p {
 .section1-list {
   padding: 120px 0;
 }
+.advantages-icon {
+border-radius: 4px;
+background: var(--CLOUD, #F4F4FD);
+width: 264px;
+height: 112px;
+flex-shrink: 0;
+}
+
 .advantages-title {
   visibility: hidden;
 }
@@ -314,6 +322,13 @@ p {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.team-icon {
+  display: block;
+  color: var(--light-cl);
+  background-color: var(--cl-primary_brand);
+  border-radius: 50%;
+  transition: color var(--cl-light), background-color var(--cl-primary_brand);
 }
 /*footer*/
 .footer {
