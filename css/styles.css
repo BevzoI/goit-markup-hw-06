@@ -152,8 +152,7 @@ p {
 .hero-img {
   background-color: var(--cl-dark);
   padding: 188px 0 188px;
-  
-  background-image: url('../images/hero/people-office.jpg'), linear-gradient(0px -167.766px / 100% 139.922%);
+  background-image: url('../images/hero/people-office.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
