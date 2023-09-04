@@ -76,11 +76,14 @@ p {
 }
 .header {
   border-bottom: 1px solid var(--cl-accent);
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
+  position: relative;
+  color:#404bbf
 }
 .header-nav-list {
   display: flex;
@@ -156,9 +159,10 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1440px;
+  max-width: 1440px; 
   height: 600px;
   flex-shrink: 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office.jpg')
 }
 .title-hero {
   color: #ffffff;
@@ -194,6 +198,15 @@ p {
 /*section 1*/
 .section1-list {
   padding: 120px 0;
+}
+.advantages-trumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd; 
+  border-radius: 4px; 
+  margin-bottom: 8px;
 }
 .advantages-icon {
 border-radius: 4px;
@@ -296,6 +309,7 @@ flex-shrink: 0;
   align-items: center;
   gap: 32px;
   flex-basis: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-info-list {
   padding: 32px 0;
@@ -324,15 +338,17 @@ flex-shrink: 0;
 }
 .team-icon {
   display: block;
-  color: var(--cl-light);
+  flex-shrink: 0;
+  border-radius: 50%;
   background-color: var(--cl-primary_brand);
-  
-  transition: color var(--cl-light), background-color var(--cl-primary_brand);
+  fill: #404bbf;
+  gap: 24px;
+  justify-content: center;
 }
 .team-socials-link {
-  gap: 24px;
-  border-radius: 50%;
+  
 }
+
 /*section 5*/
 .customers-title {
   color: var(--NAVY-BLUE, #2E2F42);
@@ -407,17 +423,14 @@ font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
 }
-.footer-socials-link {
-  display: flex;
-  align-items: center;
+.footer-socials-link .link{
+  display:inline-flex;
   justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  color: var(--cl-light);
-  border-radius: 50px;
-  border: 1px solid var(--cl-primary_brand);
-
-  transition: color var(--cl-primary_brand), border-color var(--cl-primary_brand);
+  border-radius: 50%;
+  border-color var(--cl-primary_brand);
 }
 /*portfolio*/
 /*filter btn active*/
