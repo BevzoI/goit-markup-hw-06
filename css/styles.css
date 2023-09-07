@@ -124,7 +124,10 @@ p {
   margin: 0 auto;
 }
 .nav-title-item_active {
-  background-color: var(--cl-pressed_state);
+  color: var(--cl-pressed_state);
+}
+.nav-title-item_active:after {
+  color: var(--cl-pressed_state);  
 }
 /* header style */
 .logo {
