@@ -417,6 +417,10 @@ flex-shrink: 0;
 
 
 /*section 5*/
+.customers-section {
+  padding-top: 120px; 
+  padding-bottom: 120px;
+}
 .customers-title {
   color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
