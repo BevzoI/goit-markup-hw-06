@@ -516,6 +516,7 @@ p {
 }
 .footer-links .social-list {
   gap: 16px;
+  width: 40px;
 }
 .social-list {
   display: flex; 
@@ -528,6 +529,9 @@ p {
   height: 40px;
   border-radius: 50%;
   width: 100%;
+}
+.socials-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-socials-link {
   border-color: var(--cl-primary_brand);
