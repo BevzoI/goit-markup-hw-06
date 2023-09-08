@@ -232,7 +232,7 @@ p {
   min-width: 169px;
   border-radius: 4px;
   margin: 48px auto 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-btn:hover,
@@ -522,7 +522,7 @@ p {
   display: flex; 
 }
 .footer-links .footer-socials-link {
-  display: inline-flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -542,8 +542,10 @@ p {
   height: 40px;
 }
 .footer-socials-link {
-  border-color: var(--cl-primary_brand);
+  background-color: var(--cl-primary_brand);
   display: flex;
+  height: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-links .footer-socials-link:hover,
 .footer-links .footer-socials-link:focus {
@@ -552,7 +554,7 @@ p {
 
 
 /*modal*/
-.modal-container {
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -566,10 +568,19 @@ p {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.modal-container {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-btn {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
   height: 24px; 
   border-radius: 50%; 
   display: flex; 
@@ -582,20 +593,21 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-btn:hover {
-  background-color: #404bbf;
+  background-color: var(--cl-pressed_state);
+  border: none;
 }
 .modal-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--cl-pressed_state);
   border: none;
 }
 .modal-btn-img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-img:hover {
-  fill: #ffffff;
+  fill: var(--cl-white_background);
 }
 .modal-btn-img:focus {
-  fill: #ffffff;
+  fill: var(--cl-white_background);
 }
 .is-hidden {
   opacity: 0;
@@ -677,14 +689,16 @@ p {
   0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .overlay-text {
+  position: absolute;
+  top: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cl-light);
   padding: 40px 32px; 
   background-color: #4d5ae5; 
-  height: 100%; 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
 }
 .portfolio-img-item {
   border: 1px solid var(--cl-accent);
