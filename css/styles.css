@@ -592,8 +592,8 @@ p {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal-btn:focus,
-.modal-btn:hover {
+.modal-btn-img:hover,
+.modal-btn-img:focus {
   background-color: var(--cl-pressed_state);
   border: none;
   color: var(--cl-white_background);
