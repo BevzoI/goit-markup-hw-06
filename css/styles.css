@@ -599,14 +599,11 @@ p {
 }
 .modal-btn:hover,
 .modal-btn:focus {
+  border: none;
   background-color: var(--cl-pressed_state);
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  border: none;
-}
-.modal-btn-img:hover,
-.modal-btn-img:focus {
   fill: #ffffff;
 }
 .modal-btn-img {
