@@ -197,6 +197,7 @@ p {
 }
 /*hero image*/
 .hero-img {
+  margin: 0 auto;
   background-color: var(--cl-dark);
   padding: 188px 0 188px;
   background-image: url('../images/hero/people-office.jpg');
@@ -256,8 +257,6 @@ p {
 .advantages-icon {
   border-radius: 4px;
   background: var(--CLOUD, #f4f4fd);
-  width: 264px;
-  height: 112px;
   flex-shrink: 0;
 }
 
@@ -602,8 +601,8 @@ p {
   border: none;
   background-color: var(--cl-pressed_state);
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover > .modal-btn-img ,
+.modal-btn:focus > .modal-btn-img{
   fill: #ffffff;
 }
 .modal-btn-img {
