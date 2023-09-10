@@ -165,6 +165,13 @@ p {
   background-color: #404bbf;
   border-radius: 2px;
 }
+.current {
+  color: #404bbf;
+}
+.current:hover::before,
+.current:focus:before {
+  width: 100%;
+}
 .nav-title {
   font-weight: 500;
   line-height: 1.5;
@@ -407,13 +414,7 @@ p {
 }
 
 .team-icon {
-  display: block;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background-color: var(--cl-primary_brand);
   fill: var(--cl-icon-fill);
-  gap: 24px;
-  justify-content: center;
 }
 
 /*section 5*/
@@ -524,13 +525,14 @@ p {
   display: flex; 
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
   width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .socials-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
 }
 .social-icon {
   fill: var(--cl-icon-fill);
@@ -543,7 +545,6 @@ p {
 .footer-socials-link {
   background-color: var(--cl-primary_brand);
   display: flex;
-  height: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-links .footer-socials-link:hover,
