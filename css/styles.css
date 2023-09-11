@@ -588,6 +588,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+  background-color: #4D5AE5;
+  border: none;
 }
 .form-btn-footer {
   margin-left: 16px;
