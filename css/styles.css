@@ -103,6 +103,7 @@ p {
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*
 .nav-title::after {
   position: absolute;
   content: '';
@@ -111,7 +112,7 @@ p {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-}
+}*/
 
 .header-item:not(:last-child) {
   margin-right: 40px;
@@ -127,10 +128,10 @@ p {
   padding: 0 15px;
   margin: 0 auto;
 }
-.nav-title.selected-nav {
+/*.nav-title.selected-nav {
   position: relative;
   color: var(--cl-pressed_state);
-}
+}*/
 /* header style */
 .logo {
   color: var(--cl-dark);
@@ -157,21 +158,25 @@ p {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-item ::after {
+.nav-title.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
   position: absolute;
+  content: "";
   left: 0;
   bottom: -1px;
   height: 4px;
+  width: 100%;
   background-color: #404bbf;
   border-radius: 2px;
 }
-.current {
-  color: #404bbf;
-}
-.current:hover::before,
+
+/* .current:hover::before,
 .current:focus:before {
   width: 100%;
-}
+} */
 .nav-title {
   font-weight: 500;
   line-height: 1.5;
@@ -645,6 +650,7 @@ p {
 .input-icon-modal:hover,
 .input-icon-modal:focus {
   border-color: #4D5AE5;
+  fill: #4D5AE5;
 }
 .modal-form-icon {
   position: absolute;
@@ -652,10 +658,6 @@ p {
   top: 50%; 
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input-icon-modal:hover,
-.input-icon-modal:focus {
-  fill: #4D5AE5;
 }
 
 
