@@ -583,14 +583,14 @@ p {
   color: #ffffff;
 }
 .form-btn {
+  border: none;
   min-width: 165px;
   height: 40px;
   display: flex;
-  color: #ffffff;
-  background-color: #4D5AE5;
-  border: none;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+  background-color: #4D5AE5;
 }
 .form-btn-footer {
   margin-left: 16px;
