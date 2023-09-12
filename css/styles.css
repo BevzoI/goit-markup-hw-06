@@ -726,6 +726,14 @@ p {
 .modal-form-comment:focus {
   border-color: #4D5AE5; 
 }
+.user-privacy-form {
+  margin-bottom: 24px;
+}
+.input-user-privacy:checked {
+  background-color: var(--cl-pressed_state--);
+  border: none;
+  fill: var(--cl-icon-fill);
+}
 .user-privacy-text {
   display: block;
   font-size: 12px;
@@ -744,11 +752,7 @@ p {
   justify-content: center;
   fill: transparent;
 }
-.input-user-privacy:checked {
-  background-color: var(--cl-pressed_state--);
-  border: none;
-  fill: var(--cl-icon-fill);
-}
+
 .privacy-policy-link {
   color: var(--cl-primary_brand);
 }
