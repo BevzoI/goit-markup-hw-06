@@ -587,6 +587,11 @@ p {
   min-width: 165px;
   height: 40px;
   display: flex;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
   color: #ffffff;
