@@ -729,10 +729,13 @@ p {
 .user-privacy-form {
   margin-bottom: 24px;
 }
-.input-user-privacy:checked {
+.input-user-privacy:checked~.user-privacy-text .privacy-icon-style {
   background-color: var(--cl-pressed_state--);
   border: none;
   fill: var(--cl-icon-fill);
+}
+.input-user-privacy:focus:focus-visible~.user-privacy-text .privacy-icon-style {
+  border: 1px solid #404BBF;
 }
 .user-privacy-text {
   display: block;
