@@ -513,7 +513,12 @@
         </div>
         <div class="footer-form">
           <p class="text-footer-form">Subscribe</p>
-          <form class="footer-form-subscribe">
+          <form
+            class="footer-form-subscribe"
+            name="footer-form-subscribe"
+            autocomplete="on"
+            method="POST"
+          >
             <label class="form-footer-label">
               <input class="input-footer-form" name="email" type="email" placeholder="E-mail" />
             </label>
@@ -617,9 +622,9 @@
                 <svg class="privacy-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
-                <a class="privacy" href="" target="blank">Privacy Policy</a>
               </span>
               I accept the terms and conditions of the
+              <a class="privacy link" href="" target="blank">Privacy Policy</a>
             </label>
           </div>
           <button class="btn-form">Send</button>
