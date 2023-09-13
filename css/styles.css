@@ -519,9 +519,11 @@ p {
 .footer-info {
   margin-right: 120px;
 }
+.footer-links {
+  margin-right: 80px;
+}
 .footer-links .social-list {
   gap: 16px;
-  width: 40px;
 }
 .social-list {
   display: flex;
@@ -558,8 +560,6 @@ p {
 }
 .footer-form {
   gap: 24px;
-  width: 40px;
-  display: flex;
 }
 .text-footer-form {
   margin-bottom: 16px;
