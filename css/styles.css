@@ -1026,3 +1026,22 @@ p {
   fill: var(--cl-icon-fill);
 }
 /*End mobile*/
+ /*hero img*/
+ .overlay {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 07),
+   rgba(46, 47, 66, 0.7)
+   ),
+   url(../images/hero/Darkbg.jpg);
+ }
+
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  
+ }
