@@ -461,7 +461,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   }
 }
 
-@media screen (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .advantages-subtitle {
     font-size: 20px;
     font-weight: 500;
@@ -729,7 +729,7 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
   max-width: 264px;
 }
 
-@media screen (min-width: 768px)  {
+@media screen and (min-width: 768px)  {
   .footer-text {
     width: 264px;
   }
