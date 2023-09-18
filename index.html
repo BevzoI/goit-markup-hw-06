@@ -30,13 +30,13 @@
             Web<span class="logo">Studio</span>
           </a>
           <ul class="list header-nav-list">
-            <li class="header-item item">
+            <li class="header-item card-set">
               <a href="./index.html" class="nav-title link current">Studio</a></li
             >
-            <li class="header-item item">
+            <li class="header-item card-set">
               <a href="./portfolio.html" class="nav-title link">Portfolio</a>
             </li>
-            <li class="header-item item"><a href="" class="nav-title link">Contacts</a></li>
+            <li class="header-item card-set"><a href="" class="nav-title link">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
@@ -49,7 +49,12 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="button mm-button-open js-open-menu">
+        <button type="button" 
+        class="button mm-button-open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Menu open buton"
+        >
           <svg class="mm-button-icon-hamburger" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -59,7 +64,7 @@
     <main>
       <!--hero image-->
       <section class="hero-img">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="title-hero title">Effective Solutions for Your Business</h1>
           <button class="hero-btn button" id="hero-btn" type="button" data-modal-open>
             Order Service
@@ -71,7 +76,7 @@
         <div class="container">
           <h2 class="advantages-title visually-hidden">Advantages</h2>
           <ul class="advantages-list list">
-            <li class="section-advantages">
+            <li class="section-advantages card-set">
               <div class="advantages-trumb">
                 <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -83,7 +88,7 @@
                 creative solution.
               </p>
             </li>
-            <li class="section-advantages">
+            <li class="section-advantages card-set">
               <div class="advantages-trumb">
                 <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -95,7 +100,7 @@
                 possible time.
               </p>
             </li>
-            <li class="section-advantages">
+            <li class="section-advantages card-set">
               <div class="advantages-trumb">
                 <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -107,7 +112,7 @@
                 and minimize risk.
               </p>
             </li>
-            <li class="section-advantages">
+            <li class="section-advantages card-set">
               <div class="advantages-trumb">
                 <svg class="advantages-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -123,18 +128,20 @@
         </div>
       </section>
       <!--Section 2-->
-      <section class="img section" id="img">
+      <section class="img-we-doing section" id="img">
         <div class="container">
-          <h2 class="title-section-img">What are we doing</h2>
+          <h2 class="section-title title">What are we doing</h2>
           <ul class="img-list list">
-            <li class="img-item">
-              <img src="./images/rectangle.jpg" alt="monitor" width="360" height="300" />
+            <li class="img-item card-set">
+              <img loading="lazy"
+              src="./images/rectangle.jpg" alt="monitor" width="360" height="300" />
             </li>
-            <li class="img-item">
-              <img src="./images/rectangle711.jpg" alt="messenger" width="360" height="300" />
+            <li class="img-item card-set">
+              <img loading="lazy"
+              src="./images/rectangle711.jpg" alt="messenger" width="360" height="300" />
             </li>
-            <li class="img-item">
-              <img
+            <li class="img-item card-set">
+              <img loading="lazy"
                 src="./images/rectangle2.jpg"
                 alt="smartphone and laptop"
                 width="360"
@@ -147,14 +154,14 @@
       <!--Section 3-->
       <section class="section-team-foto section">
         <div class="container">
-          <h2 class="section-team">Our Team</h2>
+          <h2 class="section-title title">Our Team</h2>
           <ul class="team-list list">
-            <li class="team-info">
+            <li class="team-info card-set">
               <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" height="260" />
               <div class="team-info-list">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
-                <ul class="team-social-list list">
+                <ul class="socials-list list">
                   <li class="team-socials">
                     <a
                       class="team-socials-link link"
@@ -210,12 +217,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-info">
+            <li class="team-info card-set">
               <img src="./images/img2.jpg" alt="Tom Ford" width="264" height="260" />
               <div class="team-info-list">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
-                <ul class="team-social-list list">
+                <ul class="socials-list list">
                   <li class="team-socials">
                     <a
                       class="team-socials-link link"
@@ -271,12 +278,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-info">
+            <li class="team-info card-set">
               <img src="./images/img3.jpg" alt="Camila Garcia" width="264" height="260" />
               <div class="team-info-list">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
-                <ul class="team-social-list list">
+                <ul class="socials-list list">
                   <li class="team-socials">
                     <a
                       class="team-socials-link link"
@@ -332,12 +339,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-info">
+            <li class="team-info card-set">
               <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" height="260" />
               <div class="team-info-list">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
-                <ul class="team-social-list list">
+                <ul class="socials-list list">
                   <li class="team-socials">
                     <a
                       class="team-socials-link link"
@@ -399,44 +406,44 @@
       <!--section 5-->
       <section class="customers-section section">
         <div class="container">
-          <h2 class="customers-title title">Customers</h2>
+          <h2 class="section-title title">Customers</h2>
           <ul class="list customers-list">
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo"></use>
                 </svg>
               </a>
             </li>
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-Logo-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-fosters"></use>
                 </svg>
               </a>
             </li>
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="section-customers-list">
+            <li class="section-customers-list card-set">
               <a href="" class="customers-link">
                 <svg class="customers-icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-tagline"></use>
@@ -461,7 +468,7 @@
         </div>
         <div class="footer-links">
           <p class="footer-title">Social media</p>
-          <ul class="list social-list">
+          <ul class="list socials-list">
             <li class="socials-link">
               <a
                 class="footer-socials-link"
@@ -640,19 +647,20 @@
     </div>
 <!--mobile menu-->
     <div class="mobile-menu js-menu-container">
+      <div class="mobile-container">
       <button class="button mmenu-button-close js-close-menu">
         <svg class="mmenu-button-close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="mmenu-nav-list list">
-        <li class="mmenu-nav-item">
+        <li class="mmenu-nav-item card-set">
           <a href="./index.html" class="mmenu-nav-item-link current link">Studio</a>
         </li>
-        <li class="mobile-menu-nav-item">
+        <li class="mobile-menu-nav-item card-set">
           <a href="./portfolio.html" class="mmenu-nav-item-link link">Portfolio</a>
         </li>
-        <li class="mobile-menu-nav-item">
+        <li class="mobile-menu-nav-item card-set">
           <a href="" class="mmenu-nav-item-link link">Contacts</a>
         </li>
       </ul>
@@ -664,15 +672,15 @@
           <a class="link mmenu-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </address>
 
-        <ul class="mmenu-socials-list list">
-          <li class="mmenu-socials-item">
+        <ul class="socials-list list">
+          <li class="card-set">
             <a href="" class="mmenu-socials-link link">
               <svg width="24" height="24" class="mmenu-socials-icon">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="mmenu-socials-item">
+          <li class="card-set">
             <a href="" class="mmenu-socials-link link">
               <svg width="24" height="24" class="mmenu-socials-icon">
                 <use href="./images/icons.svg#icon-twitter"></use>
@@ -696,9 +704,8 @@
         </ul>
       </div>
     </div>
-
+  </div>
     </div>
-    <script src="./js/modal.js" type="module"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -706,5 +713,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
