@@ -566,6 +566,7 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-container {
     padding: 0 108px;
+    width: 584рх;
   }
 }
 .customers-title {
@@ -644,6 +645,7 @@ img {
   .footer-container {
     padding-left: 108px;
     padding-right: 108px;
+    width: 584рх;
   }
 }
 @media only screen and (max-width: 767px) {
